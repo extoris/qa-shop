@@ -27,3 +27,5 @@ class LoginPage(BasePage):
         input_pass.send_keys(password)
         input_pass2 = self.browser.find_element(*LoginPageLocators.REP_REG_PASS)
         input_pass2.send_keys(password)
+        button = self.browser.find_element(*LoginPageLocators.REGISTER_BUTTON)
+        button.click()
